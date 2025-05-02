@@ -5,7 +5,6 @@ def game_basis(description, make_round):
   quantity = 3
   user_name = welcome_user()
   print('Welcome to the Brain Games!')
-  # print(f'Hello, {user_name}\n{description}')
   print(f'{description}')
 
   for _ in range(quantity):
