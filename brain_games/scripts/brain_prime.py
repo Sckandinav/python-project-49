@@ -1,7 +1,7 @@
 from brain_games.game_basis import game_basis
 from brain_games.games.prime import prime_game
 
-DESCRIPTION = '"yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def main():
