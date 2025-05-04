@@ -1,7 +1,7 @@
 import random
+from brain_games.utils import get_random_number
 
-MIN_NUMBER = 1
-MAX_NUMBER = 100
+
 OPERATIONS = ['+', '-', '*']
 
 
@@ -19,8 +19,8 @@ def calculation (x, y, operation):
 
 def calc_game():
   rng = random.SystemRandom()
-  x = rng.randint(MIN_NUMBER, MAX_NUMBER)
-  y = rng.randint(MIN_NUMBER, MAX_NUMBER)
+  x = get_random_number()
+  y = get_random_number()
   operator = OPERATIONS[rng.randint(0,2)]
   question = f"{x} {operator} {y}"
   correct_answer = calculation(x, y, operator)
