@@ -1,5 +1,6 @@
 from brain_games.utils import get_random_number
 
+
 def is_prime(n):
     if n <= 1:
         return False
@@ -15,5 +16,5 @@ def is_prime(n):
 
 def prime_game():
     question = get_random_number(1, 1000)
-    correct_answer = 'yes' if is_prime(question) else 'no'
+    correct_answer = "yes" if is_prime(question) else "no"
     return [question, correct_answer]
